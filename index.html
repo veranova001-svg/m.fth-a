@@ -5,33 +5,56 @@
         </title>
         <style>
             .hop {
-                width: 35%;
+                width: 50%;
                 margin: 0 auto;
                 background-color: blueviolet;   
             }
             .top {
                 background-color: rgb(39, 0, 65);
             }
-            .no1 {
-                background-color: rgb(203, 140, 255);
-                color: black;
-                font-style: italic;
-                margin: 3%;
-                padding: 3%;
-                border-radius: 3cap;
+            .bungkus {
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+                width: 600px;
+                margin: 40px auto;
+                gap: 20px;
+                justify-content: center;
+                width: 100%;
             }
-            .no2 {
-                background-color: rgb(203, 140, 255);
-                color: black;
-                font-style: italic;
-                margin: 3%;
-                padding: 3%;
-                border-radius: 3cap;
+            .no {
+                flex: 0 0 calc(50% - 20px);
+                box-sizing: border-box;
+                background: #f4f7ff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                transition: 0.3s;
             }
-            .no3 {
+            .no:hover {
+                background: #e6edff;
+                transform: translateY(-5px);
+            }
+            .no a {
+                display: block;
+                font-weight: bold;
+                font-size: 18px;
+                color: #1a3cff;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+            .no p {
+                font-size: 15px;
+                color: #333;
+                line-height: 1.4;
+            }
+            .no {
+                flex: 2 2 25%;
+            }
+            .no {
                 background-color: rgb(203, 140, 255);
                 color: black;
-                font-style: italic;
+                font-style: itadivc;
                 margin: 3%;
                 padding: 3%;
                 border-radius: 3cap;
@@ -45,18 +68,24 @@
         <h2 class="atas">
             Daftar Article :
         </h2>
-        <li class="no1">
-            <a href="article1.html">Article No.1</a>
-            <p>Fenomena Alam yang Selalu Tak Terduga</p>
-        </li>
+        <div class="bungkus">
+            <div class="no">
+                <a href="article1.html">Article No.1</a>
+                <p>Fenomena Alam yang Selalu Tak Terduga</p>
+            </div>
+            <div class="no">
+                <a href="article2.html">Article No.2</a>
+                <p>Manfaat Jalan Pagi untuk Kesehatan: Tubuh Lebih Bugar, Pikiran Lebih Jernih</p>
+            </div>
+            <div class="no">
+                <a href="article3.html">Article No.3</a>
+                <p>Mengelola Stres di Kehidupan Modern — Panduan Praktis</p>
+            </div>
+            <div class="no">
+                <a href="article4.html">Article No.4</a>
+                <p>Revolusi Manusia — Perubahan, Tantangan, dan Harapan</p>
+            </div>
+        </div>
         
-        <li class="no2">
-            <a href="article2.html">Article No.2</a>
-            <p>Manfaat Jalan Pagi untuk Kesehatan: Tubuh Lebih Bugar, Pikiran Lebih Jernih</p>
-        </li>
-        <li class="no3">
-            <a href="article3.html">Article No.3</a>
-            <p>Mengelola Stres di Kehidupan Modern — Panduan Praktis</p>
-        </li>
     </body>
 </html
